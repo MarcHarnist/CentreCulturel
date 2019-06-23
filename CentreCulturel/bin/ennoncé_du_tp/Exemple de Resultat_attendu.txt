@@ -1,0 +1,58 @@
+** Les auteurs
+**************
+Auteur [nom=Mars, prenom=Bruno, toString()=Personne [siteWeb=www.brunomars.com/fr]]
+Auteur [nom=Slash, prenom=Slash, twitter=https://twitter.com/slash, toString()=Personne []]
+Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]
+** Les editeurs
+***************
+Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]
+** Les livres
+*************
+Produit [titre=Completement cramé, dateSortie=13/03/2014, prixAchat= 7,60, prixVente= 9,50, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+Produit [titre=Demain j'arrête !, dateSortie=10/11/2011, prixAchat= 6,52, prixVente= 8,15, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+** Les cd
+*********
+Produit [titre=Unorthodox Jukebox, dateSortie=05/12/2012, prixAchat=10,30, prixVente=12,36, auteur=Auteur [nom=Mars, prenom=Bruno, toString()=Personne [siteWeb=www.brunomars.com/fr]]]
+	Cd [pistes=null]
+Produit [titre=Slash by Slash, dateSortie=05/04/2010, prixAchat=11,52, prixVente=13,82, auteur=Auteur [nom=Slash, prenom=Slash, twitter=https://twitter.com/slash, toString()=Personne []]]
+	Cd [pistes=null]
+** polymorphisme
+****************
+Produit [titre=Demain j'arrête !, dateSortie=10/11/2011, prixAchat= 6,52, prixVente= 8,15, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+Produit [titre=Unorthodox Jukebox, dateSortie=05/12/2012, prixAchat=10,30, prixVente=12,36, auteur=Auteur [nom=Mars, prenom=Bruno, toString()=Personne [siteWeb=www.brunomars.com/fr]]]
+	Cd [pistes=[Piste [numero=1, intitule=Gorilla, duree=Wed Dec 31 00:04:04 CET 2]
+, null, null, null, null, null, null, null, null, null, null, null, null, null, null]]
+** Le catalogue complet
+***********************
+Produit [titre=Completement cramé, dateSortie=13/03/2014, prixAchat= 7,60, prixVente= 9,50, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+Produit [titre=Demain j'arrête !, dateSortie=10/11/2011, prixAchat= 6,52, prixVente= 8,15, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+Produit [titre=Unorthodox Jukebox, dateSortie=05/12/2012, prixAchat=10,30, prixVente=12,36, auteur=Auteur [nom=Mars, prenom=Bruno, toString()=Personne [siteWeb=www.brunomars.com/fr]]]
+	Cd [pistes=[Piste [numero=1, intitule=Gorilla, duree=Wed Dec 31 00:04:04 CET 2]
+, null, null, null, null, null, null, null, null, null, null, null, null, null, null]]
+Produit [titre=Slash by Slash, dateSortie=05/04/2010, prixAchat=11,52, prixVente=13,82, auteur=Auteur [nom=Slash, prenom=Slash, twitter=https://twitter.com/slash, toString()=Personne []]]
+	Cd [pistes=null]
+** Les livres au catalogue
+**************************
+Produit [titre=Completement cramé, dateSortie=13/03/2014, prixAchat= 7,60, prixVente= 9,50, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+Produit [titre=Demain j'arrête !, dateSortie=10/11/2011, prixAchat= 6,52, prixVente= 8,15, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+** Les cds au catalogue
+***********************
+Produit [titre=Unorthodox Jukebox, dateSortie=05/12/2012, prixAchat=10,30, prixVente=12,36, auteur=Auteur [nom=Mars, prenom=Bruno, toString()=Personne [siteWeb=www.brunomars.com/fr]]]
+	Cd [pistes=[Piste [numero=1, intitule=Gorilla, duree=Wed Dec 31 00:04:04 CET 2]
+, null, null, null, null, null, null, null, null, null, null, null, null, null, null]]
+Produit [titre=Slash by Slash, dateSortie=05/04/2010, prixAchat=11,52, prixVente=13,82, auteur=Auteur [nom=Slash, prenom=Slash, twitter=https://twitter.com/slash, toString()=Personne []]]
+	Cd [pistes=null]
+** Les livres au catalogue
+**************************
+Produit [titre=Completement cramé, dateSortie=13/03/2014, prixAchat= 7,60, prixVente= 9,50, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+Produit [titre=Demain j'arrête !, dateSortie=10/11/2011, prixAchat= 6,52, prixVente= 8,15, auteur=Auteur [nom=Legardinier, prenom=Gilles, toString()=Personne []]]
+	Livre [editeur=Editeur [nomGroupe=Pocket, adresse=12 avenue d'Italie – 75013 ParistoString()=Personne [siteWeb=www.pocket.fr]]]
+Appuyez sur entrée pour sortir du test...
